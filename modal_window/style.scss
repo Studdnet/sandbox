@@ -1,0 +1,236 @@
+//------------------------------FONTS--------------------------------//
+
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+@font-face {
+    font-family: "FuturaBookC";
+    src: url("..//modal_window/assets/fonts/Futurabookc.otf") format("opentype");
+}
+@font-face {
+    font-family: "Futurademic";
+    src: url("..//modal_window/assets/fonts/Futurademic.otf") format("opentype");
+}
+@font-face {
+    font-family: "ProximaNova";
+    src: url("../assets/fonts/ProximaNova.ttf") format("truetype");
+}
+
+//--------------------------------VAR---------------------------------//
+
+$backColor: #131313;
+$bodyColor: #252525;
+$blackOpacityColor: rgba(0, 0, 0, 0.3);
+$lightBlackColor: #80808005;
+$grayColor: #363636;
+$lightGrayColor: #959595;
+$darkGrayColor:#181818;
+$sliderGray: #5a5a5a;
+$whiteColor: #FFFFFF;
+$mainColor: #E3B873;
+$brownColor: #E3B87332;
+$listSize: 20px;
+$headSize: 18px;
+$navSize: 14px;
+$varSize: 17px;
+$mainFont: 'FuturaBookC';
+$logoFont: 'Futurademic';
+$extFont: 'Yeseva One', cursive;
+$navFont: 'ProximaNova';
+
+//-------------------------------MIXINS-------------------------------//
+
+@mixin nav_menu() {
+    background: $backColor;
+    max-width: 1440px;
+    height:83px;
+    font-size: $navSize;
+    @include flex();
+    padding-left: 82px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    h1{
+        font-size:1px;
+        line-height: 1;
+        color: $backColor;
+        text-indent: -1100px;
+    }
+    .part__left{
+        color:$mainColor;
+        font-family: $logoFont;
+        white-space: nowrap;
+    }
+    .part__center{
+        width: 100%;
+        max-width: 580px;
+        min-width: 400px;
+        margin: 0 6.3%;
+
+        ul{
+            @include flex();            
+            li a{
+                display:block;
+                position: relative;
+                line-height: 1;
+                text-align: center;
+                &:hover{
+                color: $mainColor;
+                text-decoration: none;
+                }
+            }
+        }
+    }   
+    .part__right{
+        font-family: $logoFont;
+        @include flex();
+        width: 325px;
+        margin-right: 7.52%;
+        .part__right-callback{
+            color: $mainColor;
+            text-decoration:underline; 
+            &:hover{
+                text-decoration: none;
+                color: $whiteColor;
+            }
+        }
+        .part__right-btn{
+            width: 161px;
+            height: 37px;
+        }
+    }
+}
+
+@mixin flex() {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin btn() {
+    text-transform: uppercase;
+    color: $whiteColor;
+    background:$mainColor;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 3px 15px 4px #E3B87332;
+    &:hover{
+        box-shadow: 0 0 14px $mainColor;
+    }
+}
+
+@mixin header {
+    text-transform: uppercase;
+    font-family: $extFont;   
+}
+
+@mixin section-header{
+    max-width: 200px;
+    text-align: center;
+    padding-bottom: 40px;  
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 auto 30px;
+}
+
+
+
+.orderRegistration__form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.form--content {
+    background-color: gray;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+
+body{
+    background: $bodyColor;
+    color: $whiteColor; 
+    font-family: $mainFont;
+    height: 100vh;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin:0;
+    line-height: 1.35;
+}
+
+.wrapper{
+    background: $backColor;
+    margin:0 auto;
+    max-width: 1440px;
+}
+
+h2{
+    @include header();
+    margin:0 0 20px;
+    font-size: 40px;
+    line-height: 132.8%;
+    span{
+        color:$mainColor;
+    }
+}
+
+h3{
+    @include header();
+    color: $mainColor;
+    margin:0 0 30px;
+    font-size: 27px;
+    line-height: 138.6%;
+}
+
+button{
+    @include btn();
+}
+
+.visibility-hidden {
+    display: none;
+    position: relative;
+    visibility: hidden;
+    font-size:1px;
+    line-height: 1;
+    text-indent: -1100px;
+    z-index: -1;
+}
+
+//-------------------------------HEADER-------------------------------//
+
+header{
+    @include nav_menu();
+    position: fixed;
+    z-index: 3;
+}

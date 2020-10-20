@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap");
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("..//modal_window/assets/fonts/Futurabookc.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Futurademic";
+  src: url("..//modal_window/assets/fonts/Futurademic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../assets/fonts/ProximaNova.ttf") format("truetype");
+}
+
+.orderRegistration__form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form--content {
+  background-color: gray;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body {
+  background: #252525;
+  color: #FFFFFF;
+  font-family: "FuturaBookC";
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.35;
+}
+
+.wrapper {
+  background: #131313;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Yeseva One", cursive;
+  margin: 0 0 20px;
+  font-size: 40px;
+  line-height: 132.8%;
+}
+
+h2 span {
+  color: #E3B873;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Yeseva One", cursive;
+  color: #E3B873;
+  margin: 0 0 30px;
+  font-size: 27px;
+  line-height: 138.6%;
+}
+
+button {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #E3B873;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 3px 15px 4px #E3B87332;
+          box-shadow: 0px 3px 15px 4px #E3B87332;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 0 14px #E3B873;
+          box-shadow: 0 0 14px #E3B873;
+}
+
+.visibility-hidden {
+  display: none;
+  position: relative;
+  visibility: hidden;
+  font-size: 1px;
+  line-height: 1;
+  text-indent: -1100px;
+  z-index: -1;
+}
+
+header {
+  background: #131313;
+  max-width: 1440px;
+  height: 83px;
+  font-size: 14px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 82px;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  z-index: 3;
+}
+
+header h1 {
+  font-size: 1px;
+  line-height: 1;
+  color: #131313;
+  text-indent: -1100px;
+}
+
+header .part__left {
+  color: #E3B873;
+  font-family: "Futurademic";
+  white-space: nowrap;
+}
+
+header .part__center {
+  width: 100%;
+  max-width: 580px;
+  min-width: 400px;
+  margin: 0 6.3%;
+}
+
+header .part__center ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .part__center ul li a {
+  display: block;
+  position: relative;
+  line-height: 1;
+  text-align: center;
+}
+
+header .part__center ul li a:hover {
+  color: #E3B873;
+  text-decoration: none;
+}
+
+header .part__right {
+  font-family: "Futurademic";
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 325px;
+  margin-right: 7.52%;
+}
+
+header .part__right .part__right-callback {
+  color: #E3B873;
+  text-decoration: underline;
+}
+
+header .part__right .part__right-callback:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header .part__right .part__right-btn {
+  width: 161px;
+  height: 37px;
+}
+/*# sourceMappingURL=style.css.map */

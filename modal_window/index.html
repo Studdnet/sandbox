@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal window</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Repair Design Project</h1>
+            <h2 class="visibility-hidden">Repair Design Project</h2>
+            <div class="part__left"><a href="#">IC "Repair Design Project"</a></div>
+            <div class="part__center">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#measurement">measurement</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#reviews">reviews</a></li>
+                    <li><a href="#contacts">contacts</a></li>
+                </ul>
+            </div>
+            <div class="part__right">
+                <a href="tel:5551234567" class="part__right-callback">+7 (928) 768-32-39</a>
+                <button class="part__right-btn" id = "request-form">Request a call</button>
+                </div>
+        </header>
+    </div>
+    <div class="orderRegistration__form" id = "registration_form">
+        <div class="form--content">
+            <form name="request" method="GET" action="#">
+                <h4>Leave a request for free <br>
+                    departure of the measurer</h4>
+                <div>
+                    <label for="request__name">Name</label><br>
+                    <input id="request__name" type="text" placeholder="What is your name:" required="">
+                </div>
+                <div>
+                    <label for="request__phone">Phone</label><br>
+                    <input id="request__phone" type="text" placeholder="Your phone number:" required="">
+                </div>
+                <div>
+                    <label for="request__email">Email</label><br>
+                    <input id="request__email" type="email" placeholder="Your email:" required="">
+                    </div>
+                <p class="request__checkbox">
+                    <label for="request-agree">
+                        <input id="request-agree" type="checkbox">
+                        <a href=""><span class="close">I agree to the processing of personal data</span></a>
+                    </label>
+                </p>
+                <div>
+                    <button type="submit">Call the measurer</button>
+                </div>
+            </form>
+            <div class="helpSave">
+                <div class="helpSave-icon"></div>
+                <div class="helpSave-text">Help save 10 - 20% of the <br>
+                                            cost of materials</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
